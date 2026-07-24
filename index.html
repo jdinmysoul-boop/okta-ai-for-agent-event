@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okta secures AI</title>
+    <!-- Google Fonts: Outfit & Noto Sans KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=4.1">
+</head>
+
+<body>
+
+    <!-- Header / Banner Section -->
+    <header class="main-header" style="background-image: url('assets/bg2.png');">
+        <div class="header-overlay"></div>
+
+        <!-- Decoupled Header Top Branding Row: Placed outside container to stick to browser edges -->
+        <div class="header-top-row">
+            <div class="header-right-logo" style="margin-left: auto;">
+                <img src="assets/okta_logo_white.png" alt="Okta Logo" class="okta-top-logo-img">
+            </div>
+        </div>
+
+        <div class="header-container">
+            <div class="brand-logo" style="visibility: hidden; margin-bottom: 10px;">
+                <span class="seminar-tag">Launch Webinar</span>
+            </div>
+
+            <h1 class="headline">
+                AI 도입의 필수 조건,<br>완벽한 아이덴티티 거버넌스 구축하기
+            </h1>
+            <p class="subheadline">
+                이제는 비즈니스의 필수 도구가 된 AI, 하지만 AI 에이전트 도입이 빨라질수록 <br>
+                데이터 유출과 API 토큰 노출 등의 보안 위협도 함께 커지고 있습니다. <br>
+                아이덴티티 관리 분야의 글로벌 리더 옥타(Okta)와 함께 <br>
+                안전한 AI 도입 및 운영을 위한 실질적인 해법을 만나보세요.
+            </p>
+
+            <div class="webinar-meta">
+                <div class="meta-item">
+                    <span class="icon">📅</span>
+                    <span class="text">다시보기 기간: 2026년 7월 29일(수) - 8월 12일(수)</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+
+        <!-- Section 1: Videos -->
+        <section id="video-section" class="section">
+            <div class="section-title-wrap">
+                <span class="badge">WEBINAR VIDEOS</span>
+                <h2 class="section-title">웨비나 세션 다시보기</h2>
+                <p class="section-desc">아래의 세션 영상을 클릭해서 시청하세요.<br>최초 시청 시 개인정보 입력이 필요합니다.</p>
+            </div>
+
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card" data-video-index="0">
+                    <div class="video-thumbnail-container">
+                        <img src="assets/video_thumb1.png" alt="Session 1 Thumbnail" class="video-thumbnail">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <svg viewBox="0 0 24 24" class="play-icon">
+                                    <path d="M8 5v14l11-7z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <span class="overlay-text">클릭하여 시청하기</span>
+                        </div>
+                        <div class="youtube-player-container" id="player-0"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="session-badge">Session 1 (30분)</span>
+                        <h3 class="video-title"> Okta Secures AI:<br> Okta의 AI Agent 보안 전략 및 제품 개요</h3>
+                        <p class="video-desc">AI 에이전트 환경에서 왜 아이덴티티가 여전히 중요한 이유, 그리고 Okta for AI Agent의 아키텍처와 특징을 소개합니다.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card" data-video-index="1">
+                    <div class="video-thumbnail-container">
+                        <img src="assets/video_thumb2.png" alt="Session 2 Thumbnail" class="video-thumbnail">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <svg viewBox="0 0 24 24" class="play-icon">
+                                    <path d="M8 5v14l11-7z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <span class="overlay-text">클릭하여 시청하기</span>
+                        </div>
+                        <div class="youtube-player-container" id="player-1"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="session-badge font-orange">Session 2 (35분)</span>
+                        <h3 class="video-title">Okta for AI Agent의 핵심:<br> Cross App Access 라이브 데모</h3>
+                        <p class="video-desc">Okta for AI Agent의 핵심 매커니즘 설명과 함께 Cross App Access 기능을 생생한 데모로 선보입니다.</p>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card" data-video-index="2">
+                    <div class="video-thumbnail-container">
+                        <img src="assets/video_thumb3.png" alt="Session 3 Thumbnail" class="video-thumbnail">
+                        <div class="play-overlay">
+                            <div class="play-btn">
+                                <svg viewBox="0 0 24 24" class="play-icon">
+                                    <path d="M8 5v14l11-7z" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <span class="overlay-text">클릭하여 시청하기</span>
+                        </div>
+                        <div class="youtube-player-container" id="player-2"></div>
+                    </div>
+                    <div class="video-info">
+                        <span class="session-badge font-blue">Session 3 (30분)</span>
+                        <h3 class="video-title"> Auth0 for AI Agent를 이용한<br>B2C 에이전트 앱 라이브 데모</h3>
+                        <p class="video-desc">B2C 애플리케이션에서 인간과 AI 에이전트의 투명한 아이덴티티 관리, Auth0의 특징과 데모를 확인하세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Event Intro -->
+        <section id="event-section" class="section event-section">
+            <div class="event-card-container">
+                <!-- Left: Event Details -->
+                <div class="event-details">
+                    <span class="event-badge">GIFT EVENT</span>
+                    <h2 class="event-title">웨비나 시청 및 설문 참여 이벤트</h2>
+                    <p class="event-desc">
+                        세션 영상을 시청하신 후, 아래의 간단한 설문조사에 응답해 주세요.<br>
+                        추첨을 통해 <strong class="highlight-text">총 30분께 이디야커피 컵 팥절빙</strong> 쿠폰을 드립니다!<br>
+                        추가로 미팅을 신청해 주신 고객 중 <strong class="highlight-text">선착순 5분께 치킨 기프티콘</strong>을 드립니다.
+                    </p>
+                    <div class="event-info-box">
+                        <p><strong>이벤트 기간:</strong> 2026년 7월 29일(수) ~ 8월 12일(수)</p>
+                        <p><strong>당첨자 발표:</strong> 설문 참여 시 기재하신 연락처로 개별 안내</p>
+                        <p style="font-size: 0.85em; opacity: 0.7; margin-top: 8px;">* 치킨 쿠폰은 미팅 종료 후 제공됩니다.</p>
+                    </div>
+                </div>
+
+                <!-- Right: Event Coupon Image -->
+                <div class="event-coupon-right" style="align-self: flex-start; margin-top: 48px; width: 500px;">
+                    <img src="assets/coupon_edited_v2.png" alt="이벤트 쿠폰" class="event-banner-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Survey (Hidden by default, shown only to authorized users) -->
+        <section id="survey-section" class="section" style="display: none;">
+            <div class="section-title-wrap">
+                <span class="badge">SURVEY</span>
+                <h2 class="section-title">설문조사</h2>
+            </div>
+
+            <form id="webinar-survey-form" class="survey-form">
+                <!-- Survey Question 1 -->
+                <div class="survey-question-card">
+                    <p class="question-title">1. 귀사의 전체 임직원 규모(계열사 포함)는 어느 정도입니까? <span class="required">*</span></p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q1" value="499명 미만" required>
+                            <span class="custom-radio"></span> 499 명 미만
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q1" value="500명 이상 ~ 1,250명 미만">
+                            <span class="custom-radio"></span> 500명 이상 ~ 1,250명 미만
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q1" value="1,251명 이상 ~ 10,000명 미만">
+                            <span class="custom-radio"></span> 1,251명 이상 ~ 10,000명 미만
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q1" value="10,000명 이상">
+                            <span class="custom-radio"></span> 10,000명 이상
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Survey Question 2 -->
+                <div class="survey-question-card">
+                    <p class="question-title">2. 사내에서 활용 중인 AI 에이전트들의 접근 권한 및 보안(API 토큰, 데이터 접근 권한 등)은 어떻게 관리/통제하고 계십니까?
+                        <span class="required">*</span>
+                    </p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q2" value="개별적/자율적 관리" required>
+                            <span class="custom-radio"></span> 별도의 중앙 통제 없이, 부서/개발자별로 개별적이고 자율적으로 관리하고 있습니다.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q2" value="수동/플랫폼 내 권한 부여">
+                            <span class="custom-radio"></span> API 키나 토큰, 패스워드를 수동으로 관리하거나 개별 AI 플랫폼 내에서 직접 권한을 부여하고
+                            있습니다.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q2" value="네트워크 수준 보안 통제">
+                            <span class="custom-radio"></span> 네트워크 방화벽, IP 제한 등 전통적인 인프라/네트워크 수준의 보안 통제 위주로 적용하고 있습니다.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q2" value="도입/활용하고 있지 않음">
+                            <span class="custom-radio"></span> 아직 사내에 AI 에이전트를 도입하거나 활용하고 있지 않습니다.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Survey Question 3 -->
+                <div class="survey-question-card">
+                    <p class="question-title">3. 고객용 AI 서비스 개발 또는 AI API 연동 시, '인증 및 권한 통제'는 어떻게 해결하고 계십니까? <span
+                            class="required">*</span></p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q3" value="자체 개발 구축" required>
+                            <span class="custom-radio"></span> 자체 개발로 구축
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q3" value="도입/연동 검토 중 (보안 구현 고민)">
+                            <span class="custom-radio"></span> 도입/연동 검토 중 (보안 구현 고민)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q3" value="전문 솔루션 도입 완료">
+                            <span class="custom-radio"></span> 전문 솔루션 도입 완료
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q3" value="해당 사항 없음">
+                            <span class="custom-radio"></span> 해당 사항 없음 (AI 서비스 개발 계획 없음)
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Survey Question 4 -->
+                <div class="survey-question-card">
+                    <p class="question-title">4. AI 에이전트를 겨냥한 보안 공격이 증가하고 있습니다. 귀사는 AI 에이전트 보안을 대비하여 향후 '아이덴티티 보안 솔루션'을
+                        도입할 계획이 있으십니까? <span class="required">*</span></p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q4" value="예 (6개월 이내)" required>
+                            <span class="custom-radio"></span> 예, 6개월 이내.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q4" value="예 (12개월 이내)">
+                            <span class="custom-radio"></span> 예, 12개월 이내.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q4" value="계획 없으나 고려 중">
+                            <span class="custom-radio"></span> 구체적인 계획은 없으나 고려중입니다.
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q4" value="아니오">
+                            <span class="custom-radio"></span> 아니오.
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Survey Question 5 -->
+                <div class="survey-question-card">
+                    <p class="question-title">5. 귀사의 업무에 AI를 도입했다면, AI 도구 및 비인간(Non-Human) 에이전트의 계정 및 권한은 어떻게 관리하고 계신가요? <span
+                            class="required">*</span></p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q5" value="중앙화된 IAM 체계에 통합해서 관리" required>
+                            <span class="custom-radio"></span> 중앙화된 IAM 체계에 통합해서 관리
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q5" value="기존의 시스템과 분리된 별도의 보안 영역(Silo)으로 관리">
+                            <span class="custom-radio"></span> 기존의 시스템과 분리된 별도의 보안 영역(Silo)으로 관리
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q5" value="각 팀이 자체적으로 AI 도구와 에이전트를 관리">
+                            <span class="custom-radio"></span> 각 팀이 자체적으로 AI 도구와 에이전트를 관리
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q5" value="현재 관리 체계가 미흡하여 보안 사각지대로 남아있음">
+                            <span class="custom-radio"></span> 현재 관리 체계가 미흡하여 보안 사각지대로 남아있음
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Survey Question 6 -->
+                <div class="survey-question-card">
+                    <p class="question-title">6. Okta의 AI 에이전트 보안 솔루션에 대한 방문 컨설팅을 희망하십니까? <span
+                            class="required">*</span></p>
+                    <div class="radio-options">
+                        <label class="radio-label">
+                            <input type="radio" name="q6" value="예" required>
+                            <span class="custom-radio"></span> 예
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="q6" value="아니오">
+                            <span class="custom-radio"></span> 아니오
+                        </label>
+                    </div>
+                </div>
+
+                <div class="submit-btn-wrap">
+                    <button type="submit" class="survey-submit-btn">설문 제출하기</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- POPUP 1: Personal Info Input Modal (2-Step Verification) -->
+    <div id="info-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="close-info-modal" aria-label="Close modal">&times;</button>
+
+            <!-- STEP 1: Email Check Screen -->
+            <div id="step-email-check" class="step-container">
+                <div class="modal-header-section">
+                    <h3>웨비나 시청 등록</h3>
+                    <p>웨비나 동영상 시청을 위해 이메일 주소를 먼저 입력해 주세요.</p>
+                </div>
+
+                <div class="modal-form">
+                    <div class="form-group" style="margin-bottom: 12px;">
+                        <label for="check-email">이메일 주소 <span class="required">*</span></label>
+                        <input type="email" id="check-email" placeholder="example@company.com" required>
+                    </div>
+                    <button type="button" class="modal-submit-btn" id="btn-email-next">시청 권한 확인</button>
+                </div>
+            </div>
+
+            <!-- STEP 2: Detail Registration Screen (Hidden initially) -->
+            <div id="step-detail-register" class="step-container hidden-step">
+                <div class="modal-header-section">
+                    <h3>최초 시청자 정보 등록</h3>
+                    <p>등록되지 않은 이메일입니다. 최초 1회 정보 등록 완료 시 즉시 시청이 가능합니다.</p>
+                </div>
+
+                <form id="info-submit-form" class="modal-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>신청 이메일</label>
+                            <input type="email" id="display-email" name="email" readonly
+                                style="background-color: #f1f5f9; color: #64748b; font-weight: 500;">
+                        </div>
+                        <div class="form-group">
+                            <label for="company-name">회사명 <span class="required">*</span></label>
+                            <input type="text" id="company-name" name="company" placeholder="옥타 코리아" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">부서 <span class="required">*</span></label>
+                            <input type="text" id="department" name="department" placeholder="IT 보안팀" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="job-title">직책 <span class="required">*</span></label>
+                            <input type="text" id="job-title" name="jobTitle" placeholder="과장 / 팀장" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-name">이름 <span class="required">*</span></label>
+                            <input type="text" id="user-name" name="name" placeholder="홍길동" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="user-phone">전화번호 <span class="required">*</span></label>
+                            <input type="tel" id="user-phone" name="phone" placeholder="010-1234-5678" required>
+                        </div>
+                    </div>
+
+                    <div class="privacy-agreement-area">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy-agreement" name="agreement">
+                            <span class="custom-checkbox"></span>
+                            <span class="agree-label-text">개인정보 수집 및 이용에 동의합니다. (수집 주체: Okta Identity Korea) <span
+                                    class="required">*</span></span>
+                        </label>
+                        <button type="button" class="view-details-btn" id="open-terms-modal">자세히 보기</button>
+                    </div>
+
+                    <div class="step-btn-group" style="display: flex; gap: 10px; margin-top: 10px;">
+                        <button type="button" class="modal-submit-btn" id="btn-back-to-email"
+                            style="background: #64748b; width: 35%;">뒤로가기</button>
+                        <button type="submit" class="modal-submit-btn" style="width: 65%;">정보 등록 및 시청하기</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- POPUP 2: Terms & Conditions Modal -->
+    <div id="terms-modal" class="modal-overlay terms-overlay">
+        <div class="modal-card terms-card">
+            <button class="modal-close-btn" id="close-terms-modal" aria-label="Close terms modal">&times;</button>
+            <h3>개인정보 수집 및 이용 동의서</h3>
+            <div class="terms-content">
+                <h4>1. 수집하는 개인정보 항목</h4>
+                <p><strong>Okta Identity Korea</strong>는 웨비나 다시보기 서비스 및 관련 이벤트 제공을 위해 아래와 같은 최소한의 개인정보를 수집하고 있습니다.</p>
+                <ul>
+                    <li><strong>수집 항목:</strong> 회사명, 부서, 직책, 이름, 이메일 주소, 전화번호</li>
+                </ul>
+
+                <h4>2. 개인정보 수집 및 이용 목적</h4>
+                <ul>
+                    <li><strong>웨비나 서비스 제공:</strong> 세션 비디오 시청 권한 부여 및 새로고침 유지</li>
+                    <li><strong>이벤트 운영:</strong> 커피/빙수 쿠폰 이벤트 당첨자 추첨 및 기프티콘 발송</li>
+                    <li><strong>정보 제공 및 마케팅:</strong> 신규 솔루션 안내, 세미나 초청, 영업 컨설팅 목적의 연락</li>
+                </ul>
+
+                <h4>3. 개인정보의 보유 및 이용 기간</h4>
+                <p>개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 관련 법령에 따라 보존합니다.</p>
+                <ul>
+                    <li><strong>보유 기간:</strong> 수집일로부터 1년 또는 정보주체의 파기 요청 시까지</li>
+                </ul>
+
+                <h4>4. 동의 거부 권리 및 불이익</h4>
+                <p>귀하는 개인정보 수집 및 이용 동의를 거부할 권리가 있습니다. 단, 동의를 거부하실 경우 웨비나 영상 시청 및 경품 이벤트 참여가 제한될 수 있습니다.</p>
+            </div>
+            <div class="terms-footer">
+                <button type="button" class="terms-confirm-btn" id="confirm-terms-btn">동의하고 닫기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="assets/okta_logo_white.png" alt="Okta Logo" class="okta-footer-logo-img">
+            </div>
+            <div class="footer-right">
+                <p class="company-name">Okta Identity Korea</p>
+                <p class="company-address">서울특별시 강남구 테헤란로 521, 파르나스타워 14층</p>
+                <p class="copyright">&copy; 2026 Okta, Inc. All Rights Reserved. Powered by SharedIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
